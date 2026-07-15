@@ -5,130 +5,201 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Dilip Bathena - Professional Resume</title>
     <style>
+        /* Base Styles */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f7f6;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #2d3748;
+            background-color: #edf2f7; /* Soft light gray background */
             margin: 0;
             padding: 20px;
         }
+        
         .container {
-            max-width: 900px;
+            max-width: 950px;
             margin: 0 auto;
-            background: #fff;
-            padding: 40px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            background: transparent;
         }
+
+        /* Header Layout */
         header {
-            text-align: center;
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 20px;
+            background: linear-gradient(135deg, #1A365D 0%, #2b6cb0 50%, #319795 100%); /* Professional colorful gradient */
+            color: #ffffff;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             margin-bottom: 30px;
         }
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #2c3e50;
-            margin-bottom: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+        .header-text {
+            flex: 1;
         }
+
         header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: #2c3e50;
+            margin: 0 0 10px 0;
+            font-size: 2.8em;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
         }
+
         .contact-info {
             font-size: 1.1em;
-            color: #555;
-            margin-top: 10px;
-        }
-        .contact-info a {
-            color: #2980b9;
-            text-decoration: none;
-        }
-        h2 {
-            font-size: 1.5em;
-            color: #2c3e50;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 5px;
-            margin-top: 30px;
-        }
-        .section-item {
+            color: #e2e8f0;
             margin-bottom: 20px;
         }
+
+        .contact-info a {
+            color: #63b3ed;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .contact-info a:hover {
+            color: #bee3f8;
+            text-decoration: underline;
+        }
+
+        /* Profile Image */
+        .profile-image-container {
+            margin-left: 30px;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ffffff;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            background-color: #fff;
+        }
+
+        /* Content Sections (Cards) */
+        section {
+            background: #ffffff;
+            padding: 35px 40px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border-top: 4px solid #319795; /* Teal accent line */
+        }
+
+        h2 {
+            font-size: 1.6em;
+            color: #2b6cb0; /* Deep blue heading */
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .section-item {
+            margin-bottom: 25px;
+        }
+
         .section-item h3 {
             margin: 0;
-            font-size: 1.2em;
-            color: #34495e;
+            font-size: 1.3em;
+            color: #2d3748;
         }
+
         .section-item .date-role {
             font-weight: bold;
-            color: #7f8c8d;
-            font-style: italic;
-            margin-bottom: 5px;
+            color: #319795; /* Teal for roles */
+            margin-bottom: 8px;
+            font-size: 0.95em;
         }
+
         ul {
             margin: 10px 0;
             padding-left: 20px;
         }
+
         li {
             margin-bottom: 10px;
         }
-        
-        /* Button Styles */
-        .btn-container {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .action-btn {
-            display: inline-block;
-            background-color: #2c3e50;
-            color: #ffffff;
-            padding: 10px 20px;
-            margin: 5px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        .action-btn:hover {
-            background-color: #1a252f;
-        }
+
+        /* Links & Buttons */
         .article-link {
             display: inline-block;
-            margin-top: 3px;
-            font-size: 0.9em;
-            color: #e67e22;
+            margin-top: 5px;
+            font-size: 0.95em;
+            color: #dd6b20; /* Orange pop */
             text-decoration: none;
             font-weight: bold;
         }
+
         .article-link:hover {
             text-decoration: underline;
+            color: #c05621;
+        }
+
+        .btn-container {
+            margin-top: 15px;
+        }
+
+        .action-btn {
+            display: inline-block;
+            background-color: #319795; /* Teal button */
+            color: #ffffff !important;
+            padding: 10px 22px;
+            margin: 8px 5px;
+            text-decoration: none;
+            border-radius: 30px; /* Rounded pill buttons */
+            font-weight: bold;
+            font-size: 0.95em;
+            box-shadow: 0 4px 6px rgba(49, 151, 149, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .action-btn:hover {
+            background-color: #285e61;
+            transform: translateY(-2px); /* Slight lift effect */
+            box-shadow: 0 6px 12px rgba(49, 151, 149, 0.4);
         }
         
-        .testimonial-section {
-            text-align: center;
-            margin-top: 40px;
-            padding: 30px 20px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            border: 1px solid #e0e0e0;
+        .btn-primary {
+            background-color: #ffffff;
+            color: #2b6cb0 !important;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
+        
+        .btn-primary:hover {
+            background-color: #ebf8ff;
+            color: #2b6cb0 !important;
+        }
+
         .testimonial-list {
             list-style-type: none;
             padding: 0;
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
+            gap: 12px;
             margin-top: 20px;
         }
+        
         .testimonial-list li {
             margin: 0;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px 20px;
+            }
+            .profile-image-container {
+                margin-left: 0;
+                margin-bottom: 20px;
+                order: -1; /* Puts image above text on mobile */
+            }
+            header h1 {
+                font-size: 2.2em;
+            }
         }
     </style>
 </head>
@@ -136,18 +207,21 @@
 
 <div class="container">
     <header>
-        <!-- Profile Photo -->
-        <img src="Testimonials/Ppp.jpg" alt="Dr. Dilip Bathena" class="profile-img">
-        
-        <h1>Dr. Dilip Bathena</h1>
-        <div class="contact-info">
-            Email: <a href="mailto:dilip.nird@gmail.com">dilip.nird@gmail.com</a> | 
-            Mobile: +91 9542702606<br>
-            Date of Birth: 14/07/1983 | Gender: Male
+        <div class="header-text">
+            <h1>Dr. Dilip Bathena</h1>
+            <div class="contact-info">
+                Email: <a href="mailto:dilip.nird@gmail.com">dilip.nird@gmail.com</a> | 
+                Mobile: +91 9542702606<br>
+                Date of Birth: 14/07/1983 | Gender: Male
+            </div>
+            <div class="btn-container">
+                <!-- PDF Resume linked using exact Testomonials folder -->
+                <a href="Testomonials/Dilip%20FAC.pdf" target="_blank" class="action-btn btn-primary">📄 View/Download Resume PDF</a>
+            </div>
         </div>
-        <div class="btn-container">
-            <!-- Link to PDF Resume -->
-            <a href="Testimonials/Dilip%20FAC.pdf" target="_blank" class="action-btn">📄 View/Download PDF Resume</a>
+        <div class="profile-image-container">
+            <!-- Profile Photo pointing to Ppp.jpg in the correct folder -->
+            <img src="Testomonials/Ppp.jpg" alt="Dr. Dilip Bathena" class="profile-img" onerror="this.src='https://via.placeholder.com/160x160.png?text=Photo+Missing'">
         </div>
     </header>
 
@@ -164,36 +238,6 @@
             <li>Proficient in conducting and participating in workshops and programmes emphasising Sociological aspects of community development.</li>
             <li>Well-versed in IT and ICT applications for monitoring and analysing various programs, schemes, and Socio-economic development initiatives.</li>
             <li>SPSS and Excel Research analysis proficient; Basic understanding of Python for Data Science and AI.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Books & Paper Publications</h2>
-        <ul>
-            <li>
-                <strong>The Real Purpose of Education</strong> - Published in international Multidisciplinary journal for education, ISSN 2349-5774 (2015).<br>
-                <a href="https://www.researchgate.net/profile/Tarakeswara-Ippili/publication/326990630_COVERAGE_OF_SYRIAN_REFUGEE_CONFLICT_A_CONTENT_ANALYSIS_OF_FOREIGN_AND_INDIAN_MEDIA/links/5b715d8ba6fdcc87df73995b/COVERAGE-OF-SYRIAN-REFUGEE-CONFLICT-A-CONTENT-ANALYSIS-OF-FOREIGN-AND-INDIAN-MEDIA.pdf" target="_blank" class="article-link">Read Article &rarr;</a>
-            </li>
-            <li>
-                <strong>Need for the Paradigm Shift in hitherto driven practices, for the accomplishment of society enshrined in-socio economic political equity-for Dalits and subalterns</strong> - Published in Indian stream Research Journal (2016).<br>
-                <a href="http://oldisrj.lbp.world/ViewPdf.aspx?ArticleID=8370" target="_blank" class="article-link">Read Article &rarr;</a>
-            </li>
-            <li>
-                <strong>Effectiveness of information and communication technology (ICT) for digital banking, e-commerce and payment gateways among the rural community in Ananthapuramu district of Andhra Pradesh</strong> - Published in Indian journal applied research (2021).<br>
-                <a href="https://www.worldwidejournals.com/indian-journal-of-applied-research-(IJAR)/recent_issues_pdf/2021/March/effectiveness-of-information-and-communication-technology-ict-for-digital-banking-ecommerce-and-payment-gateways-among-the-rural-community-in-ananthapuramu-district-of-andhra-pradesh_March_2021_6153413589_0216580.pdf" target="_blank" class="article-link">Read Article &rarr;</a>
-            </li>
-            <li>
-                <strong>Perception On Information And Communication Technology (ICT) Among Rural Communities: A Study In Ananthapuramu District Of Andhra Pradesh</strong> - Published at International Journal of Multidisciplinary Educational Research (2021).<br>
-                <a href="http://www.ijmer.in" target="_blank" class="article-link">Visit Journal &rarr;</a>
-            </li>
-            <li>
-                <strong>Pre-Post ICT usage -Happiness and stress comparative analysis for agriculture sector in various castes among various income groups in Ananthapuramu District Andhra Pradesh (AP)</strong> - Published in International Journal of Creative Research Thoughts (2022).<br>
-                <a href="http://www.ijcrt.org" target="_blank" class="article-link">Visit Journal &rarr;</a>
-            </li>
-            <li>
-                <strong>A Perspective study on willingness to pay E-Banking and Commerce Services in rural community of Ananthapuramu District AP</strong> - Published in JAC: A Journal Of Composition Theory (2021).<br>
-                <a href="http://www.jctjournal.com" target="_blank" class="article-link">Visit Journal &rarr;</a>
-            </li>
         </ul>
     </section>
 
@@ -228,17 +272,47 @@
         </div>
     </section>
 
-    <section class="testimonial-section">
+    <section>
+        <h2>Books & Paper Publications</h2>
+        <ul>
+            <li>
+                <strong>The Real Purpose of Education</strong> - Published in international Multidisciplinary journal for education, ISSN 2349-5774 (2015).<br>
+                <a href="https://www.researchgate.net/profile/Tarakeswara-Ippili/publication/326990630_COVERAGE_OF_SYRIAN_REFUGEE_CONFLICT_A_CONTENT_ANALYSIS_OF_FOREIGN_AND_INDIAN_MEDIA/links/5b715d8ba6fdcc87df73995b/COVERAGE-OF-SYRIAN-REFUGEE-CONFLICT-A-CONTENT-ANALYSIS-OF-FOREIGN-AND-INDIAN-MEDIA.pdf" target="_blank" class="article-link">Read Article &rarr;</a>
+            </li>
+            <li>
+                <strong>Need for the Paradigm Shift in hitherto driven practices, for the accomplishment of society enshrined in-socio economic political equity-for Dalits and subalterns</strong> - Published in Indian stream Research Journal (2016).<br>
+                <a href="http://oldisrj.lbp.world/ViewPdf.aspx?ArticleID=8370" target="_blank" class="article-link">Read Article &rarr;</a>
+            </li>
+            <li>
+                <strong>Effectiveness of information and communication technology (ICT) for digital banking, e-commerce and payment gateways among the rural community in Ananthapuramu district of Andhra Pradesh</strong> - Published in Indian journal applied research (2021).<br>
+                <a href="https://www.worldwidejournals.com/indian-journal-of-applied-research-(IJAR)/recent_issues_pdf/2021/March/effectiveness-of-information-and-communication-technology-ict-for-digital-banking-ecommerce-and-payment-gateways-among-the-rural-community-in-ananthapuramu-district-of-andhra-pradesh_March_2021_6153413589_0216580.pdf" target="_blank" class="article-link">Read Article &rarr;</a>
+            </li>
+            <li>
+                <strong>Perception On Information And Communication Technology (ICT) Among Rural Communities: A Study In Ananthapuramu District Of Andhra Pradesh</strong> - Published at International Journal of Multidisciplinary Educational Research (2021).<br>
+                <a href="http://www.ijmer.in" target="_blank" class="article-link">Visit Journal &rarr;</a>
+            </li>
+            <li>
+                <strong>Pre-Post ICT usage -Happiness and stress comparative analysis for agriculture sector in various castes among various income groups in Ananthapuramu District Andhra Pradesh (AP)</strong> - Published in International Journal of Creative Research Thoughts (2022).<br>
+                <a href="http://www.ijcrt.org" target="_blank" class="article-link">Visit Journal &rarr;</a>
+            </li>
+            <li>
+                <strong>A Perspective study on willingness to pay E-Banking and Commerce Services in rural community of Ananthapuramu District AP</strong> - Published in JAC: A Journal Of Composition Theory (2021).<br>
+                <a href="http://www.jctjournal.com" target="_blank" class="article-link">Visit Journal &rarr;</a>
+            </li>
+        </ul>
+    </section>
+
+    <section>
         <h2>Letters of Recommendation & Testimonials</h2>
         <p>Click the buttons below to view official recommendations and academic certifications.</p>
         
         <ul class="testimonial-list">
-            <li><a href="Testimonials/NIRDPR-dg.pdf" target="_blank" class="action-btn">📄 NIRDPR DG Recommendation</a></li>
-            <li><a href="Testimonials/Testominials%20and%20recommendation%20letters%202006%20-.pdf" target="_blank" class="action-btn">📄 Recommendations (2006)</a></li>
-            <li><a href="Testimonials/phd-dilip_compressed.pdf" target="_blank" class="action-btn">📄 PhD Documents</a></li>
+            <li><a href="Testomonials/NIRDPR-dg.pdf" target="_blank" class="action-btn">📄 NIRDPR DG Recommendation</a></li>
+            <li><a href="Testomonials/Testominials%20and%20recommendation%20letters%202006%20-.pdf" target="_blank" class="action-btn">📄 Recommendations (2006)</a></li>
+            <li><a href="Testomonials/phd-dilip_compressed.pdf" target="_blank" class="action-btn">📄 PhD Documents</a></li>
             
-            <!-- IMPORTANT: Replace FULL_FILE_NAME.pdf below with the exact file name from your repository -->
-            <li><a href="Testimonials/Viva%20&%20Phd%20Foreign%20External%20Examiners-UGC%20Reg%20200.pdf" target="_blank" class="action-btn">📄 Viva & External Examiners</a></li>
+            <!-- Note: Used %26 to encode the ampersand symbol safely for the web -->
+            <li><a href="Testomonials/Viva%20%26%20Phd%20Foreign%20External%20Examiners-UGC%20Reg%20200.pdf" target="_blank" class="action-btn">📄 Viva & External Examiners</a></li>
         </ul>
     </section>
 
