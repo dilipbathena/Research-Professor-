@@ -27,6 +27,15 @@
             padding-bottom: 20px;
             margin-bottom: 30px;
         }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #2c3e50;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
         header h1 {
             margin: 0;
             font-size: 2.5em;
@@ -104,10 +113,22 @@
         .testimonial-section {
             text-align: center;
             margin-top: 40px;
-            padding: 20px;
+            padding: 30px 20px;
             background-color: #f9f9f9;
             border-radius: 8px;
             border: 1px solid #e0e0e0;
+        }
+        .testimonial-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .testimonial-list li {
+            margin: 0;
         }
     </style>
 </head>
@@ -115,6 +136,9 @@
 
 <div class="container">
     <header>
+        <!-- Profile Photo -->
+        <img src="Testimonials/Ppp.jpg" alt="Dr. Dilip Bathena" class="profile-img">
+        
         <h1>Dr. Dilip Bathena</h1>
         <div class="contact-info">
             Email: <a href="mailto:dilip.nird@gmail.com">dilip.nird@gmail.com</a> | 
@@ -122,8 +146,8 @@
             Date of Birth: 14/07/1983 | Gender: Male
         </div>
         <div class="btn-container">
-            <!-- This links to your PDF file in the GitHub repository -->
-            <a href="Dilip_FAC.pdf" target="_blank" class="action-btn">📄 View/Download PDF Resume</a>
+            <!-- Link to PDF Resume -->
+            <a href="Testimonials/Dilip%20FAC.pdf" target="_blank" class="action-btn">📄 View/Download PDF Resume</a>
         </div>
     </header>
 
@@ -205,10 +229,17 @@
     </section>
 
     <section class="testimonial-section">
-        <h2>Feedback & Testimonials</h2>
-        <p>If you have worked with me, attended my classes, or collaborated on a project, I would greatly appreciate your feedback!</p>
-        <!-- REPLACE THE LINK BELOW WITH YOUR GOOGLE FORM OR SENJA LINK -->
-        <a href="https://docs.google.com/forms/" target="_blank" class="action-btn">💬 Submit a Testimonial</a>
+        <h2>Letters of Recommendation & Testimonials</h2>
+        <p>Click the buttons below to view official recommendations and academic certifications.</p>
+        
+        <ul class="testimonial-list">
+            <li><a href="Testimonials/NIRDPR-dg.pdf" target="_blank" class="action-btn">📄 NIRDPR DG Recommendation</a></li>
+            <li><a href="Testimonials/Testominials%20and%20recommendation%20letters%202006%20-.pdf" target="_blank" class="action-btn">📄 Recommendations (2006)</a></li>
+            <li><a href="Testimonials/phd-dilip_compressed.pdf" target="_blank" class="action-btn">📄 PhD Documents</a></li>
+            
+            <!-- IMPORTANT: Replace FULL_FILE_NAME.pdf below with the exact file name from your repository -->
+            <li><a href="Testimonials/Viva%20&%20Phd%20Foreign%20External%20Examiners-UGC%20Reg%20200.pdf" target="_blank" class="action-btn">📄 Viva & External Examiners</a></li>
+        </ul>
     </section>
 
 </div>
